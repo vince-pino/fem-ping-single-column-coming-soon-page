@@ -1,0 +1,189 @@
+body {
+  height: 100vh;
+  font-family: Libre Franklin;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main {
+  margin: auto;
+  width: 50%;
+  margin-top: 5rem;
+  margin-bottom: 40px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-size: 46px;
+  margin-bottom: 20px;
+}
+
+.title span{
+  font-weight: 300;
+  color: hsl(0, 0%, 59%);
+}
+
+.text {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.form {
+  width: 100%;
+  margin-bottom: 5rem;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  position: relative;
+}
+
+.email {
+  flex: 1;
+  padding: 20px 40px;
+  border-radius: 50px;
+  border: 1px solid hsl(223, 100%, 88%);
+}
+
+.email::placeholder {
+  font-size: 16px;
+}
+
+.email:focus {
+  outline-color: hsl(223, 87%, 63%);
+  outline-width: 2px;
+}
+
+.error-message {
+  display: none;
+  position: absolute;
+  top: 60px;
+  left: 40px;
+  font-size: 14px;
+  color: red;
+  font-style: italic;
+}
+
+.error-email {
+  border: 1px solid red;
+}
+
+.error-email:focus {
+  outline-color: red;
+  outline-width: 1px;
+}
+
+.btn {
+  padding: 20px 70px;
+  font-size: 16px;
+  border-radius: 50px;
+  text-wrap: nowrap;
+  background-color: hsl(223, 87%, 63%);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:active {
+  background-color: hsl(223, 87%, 63%, 0.8);
+}
+
+.image img {
+  width: 100%;
+  margin-bottom: 5rem;
+}
+
+.icons {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.i-container {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border: 1px solid hsl(223, 100%, 88%);
+  border-radius: 100%;
+
+  display: flex;
+}
+
+.i-container:hover{
+  background-color: hsl(223, 87%, 63%);
+  border: 1px solid hsl(223, 87%, 63%);
+}
+
+.i-container:hover i {
+  color: white;
+}
+
+i {
+  color: hsl(223, 87%, 63%);
+  margin-right: 20px;
+  margin: auto;
+  cursor: pointer;
+}
+
+.copyright {
+  color: hsl(0, 0%, 59%);
+  font-size: 12px;
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media screen and (max-width: 375px) {
+  main {
+    width: 90%;
+  }
+
+  .logo {
+    width: 60px;
+    height: auto;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .text {
+    font-size: 14px;
+  }
+
+  .form {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .email {
+    padding: 16px 40px;
+  }
+
+  .email::placeholder {
+    font-size: 14px;
+  }
+
+  .error-message {
+    position: static;
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+
+  .btn {
+    padding: 16px 40px;
+    font-size: 14px;
+  }
+
+  .copyright {
+    font-size: 10px;
+  }
+}
